@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/bbymedia-web',
-  images: {
-    unoptimized: true,
-  },
+  basePath: '/bbymedia-web', 
+  assetPrefix: '/bbymedia-web/', 
 };
 
 module.exports = nextConfig;
