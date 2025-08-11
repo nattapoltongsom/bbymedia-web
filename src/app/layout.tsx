@@ -18,6 +18,15 @@ export const metadata: Metadata = {
     siteName: "BBY Media",
     locale: "th_TH",
     type: "website",
+    images: [
+      {
+        url: "https://bbymedia.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "BBY Media Logo",
+        type: "image/jpeg",
+      },
+    ],
   },
 };
 
