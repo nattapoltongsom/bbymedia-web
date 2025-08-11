@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bbymedia.com
+
+# Sitemaps
+Sitemap: https://bbymedia.com/sitemap.xml
