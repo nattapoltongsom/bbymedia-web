@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   description: "เราคือผู้ให้บริการด้านการตลาดครบวงจร ด้วยทีมงานมืออาชีพ",
   keywords: ["บริษัท", "การตลาด", "บริการ", "Next.js", "SEO"],
   metadataBase: new URL("https://bbymedia.com"),
+  icons: {
+    icon: "/favicon.ico", 
+    shortcut: "/favicon.ico",  
+  },
   openGraph: {
     title: "BBY Media",
     description: "บริการที่ยกระดับธุรกิจของคุณ",
