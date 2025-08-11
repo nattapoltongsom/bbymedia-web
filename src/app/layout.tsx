@@ -1,29 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "../styles/globals.css"; // ✅ ตรวจให้แน่ใจว่าไฟล์นี้อยู่จริง
+import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-// โหลดฟอนต์จาก Google Fonts ด้วย next/font
-const geistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-  display: "swap",
-});
-
-// SEO Metadata
 export const metadata: Metadata = {
   title: {
     default: "BBY Media",
     template: "%s | BBY Media",
   },
-  description: "เราคือผู้ให้บริการด้าน [บริการของคุณ] ด้วยทีมงานมืออาชีพ",
-  keywords: ["บริษัท", "เทคโนโลยี", "บริการ", "Next.js", "SEO"],
-  metadataBase: new URL("https://bbymedia.com"), 
+  description: "เราคือผู้ให้บริการด้านการตลาดครบวงจร ด้วยทีมงานมืออาชีพ",
+  keywords: ["บริษัท", "การตลาด", "บริการ", "Next.js", "SEO"],
+  metadataBase: new URL("https://bbymedia.com"),
   openGraph: {
     title: "BBY Media",
     description: "บริการที่ยกระดับธุรกิจของคุณ",
@@ -34,15 +21,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="th" className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}>
-      <body className="bg-slate-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
-        {children}
+    <html lang="th">
+      <body className="bg-white text-gray-800">
+        <Header />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );

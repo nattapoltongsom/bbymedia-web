@@ -1,57 +1,41 @@
-"use client";
-
-import { Mail, Phone, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { FaFacebookF } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 text-center px-6 bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-3xl mx-auto">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-          พร้อมสร้างแบรนด์ของคุณให้โดดเด่นหรือยัง?
+    <section className="w-full bg-white py-10">
+      <div className="max-w-md mx-auto px-6 text-center">
+        <h3 className="text-lg md:text-xl font-semibold mb-4 text-gray-900">
+          Bbysmartads โฆษณาสื่อออนไลน์ ออฟไลน์
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
-          ให้เราช่วยวางกลยุทธ์ สร้างตัวตน และขับเคลื่อนแบรนด์ของคุณให้เป็นที่จดจำ ติดต่อเราวันนี้เพื่อรับคำปรึกษาฟรี!       
-         </p>
-
-        {/* Contact Methods */}
-        <div className="flex flex-col items-center gap-4 mb-8 text-gray-700 dark:text-gray-300">
-          <div className="flex items-center gap-2">
-            <Phone size={20} />
-            <span>061-869-7892</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Mail size={20} />
-            <span>babyyak.bby@gmail.com</span>
-          </div>
-        </div>
-
-        {/* Social icons */}
-        <div className="flex justify-center gap-6 mt-4">
-          <a
-            href="https://facebook.com/YOUR_PAGE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition"
-          >
-            <Facebook size={28} />
+        <p className="text-sm md:text-base leading-relaxed mb-3 text-gray-700">
+          105/3 ซอยประชาชื่น 34<br />
+          แขวงวงศ์สว่าง เขตบางซื่อ<br />
+          กรุงเทพมหานคร
+        </p>
+        <p className="text-sm md:text-base mb-1 text-gray-700">
+          โทร:{" "}
+          <a href="tel:0618697892" className="underline hover:text-[#FF3B30] transition">
+            061-869-7892
           </a>
+        </p>
+        <p className="text-sm md:text-base mb-6 text-gray-700">
+          อีเมล:{" "}
           <a
-            href="https://instagram.com/YOUR_PAGE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition"
+            href="mailto:babyyak.bby@gmail.com"
+            className="underline hover:text-[#FF3B30] transition break-words"
           >
-            <Instagram size={28} />
+            babyyak.bby@gmail.com
           </a>
-          <a
-            href="https://line.me/YOUR_LINE_LINK"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-300 hover:text-green-500 transition"
-          >
-            <MessageCircle size={28} />
-          </a>
-        </div>
+        </p>
+        <a
+          href="https://www.facebook.com/BBYMediaTH"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center space-x-2 text-[#00C853] hover:text-[#007b2d] transition"
+        >
+          <FaFacebookF className="text-lg" />
+          <span className="text-sm font-medium">Facebook</span>
+        </a>
       </div>
     </section>
   );
