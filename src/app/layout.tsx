@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   keywords: ["บริษัท", "การตลาด", "บริการ", "Next.js", "SEO"],
   metadataBase: new URL("https://bbymedia.com"),
   icons: {
-    icon: "/favicon.ico", 
-    shortcut: "/favicon.ico",  
+    icon: "/icon.png", 
+    shortcut: "/icon.png",  
   },
   openGraph: {
     title: "BBY Media",
